@@ -1,0 +1,46 @@
+{
+  "type": "ridge_baseline",
+  "features": [
+    "intercept",
+    "year_decades",
+    "mother_weight_delta",
+    "mother_known",
+    "father_weight_delta",
+    "father_known",
+    "grower_skill"
+  ],
+  "coefficients": {
+    "intercept": 469.3048682600495,
+    "year_decades": 5.844774059479658,
+    "mother_weight_delta": 0.7651298396006825,
+    "mother_known": 165.15214930439362,
+    "father_weight_delta": 103.3536411265843,
+    "father_known": 205.67298325127024,
+    "grower_skill": 1366.846749546634
+  },
+  "residual_sd_lbs": 364.50673365194996,
+  "train_years": "2017-2023",
+  "test_years": "2024-2025",
+  "train_metrics": {
+    "n": 12310,
+    "mae_lbs": 288.40188446406637,
+    "rmse_lbs": 364.50673365194996,
+    "bias_lbs": 5.001011609522497e-13,
+    "p90_interval_coverage": 0.9086921202274574,
+    "threshold_prevalence": 0.006092607636068237,
+    "brier": 0.006403829146769397
+  },
+  "test_metrics": {
+    "n": 3696,
+    "mae_lbs": 320.72908106541433,
+    "rmse_lbs": 409.97780974109054,
+    "bias_lbs": 12.108982079721542,
+    "p90_interval_coverage": 0.8685064935064936,
+    "threshold_prevalence": 0.02002164502164502,
+    "brier": 0.016745075365699646
+  },
+  "constant_baseline_test_mae_lbs": 469.63667977940014,
+  "threshold_kg": 1000,
+  "training_n": 12310,
+  "global_mean_latest_lbs": 786.9013815536058
+}

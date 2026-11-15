@@ -1,0 +1,57 @@
+{
+  "type": "ridge_baseline",
+  "features": [
+    "intercept",
+    "year_decades",
+    "mother_weight_delta",
+    "mother_known",
+    "father_weight_delta",
+    "father_known",
+    "grower_skill"
+  ],
+  "coefficients": {
+    "intercept": 483.6001216232429,
+    "year_decades": -13.926909381290699,
+    "mother_weight_delta": 0.9030169966332284,
+    "mother_known": 152.74984085079456,
+    "father_weight_delta": 120.53717420874419,
+    "father_known": 207.2064786749963,
+    "grower_skill": 1347.4801705644365
+  },
+  "residual_sd_lbs": 375.3682706712628,
+  "train_years": "2017-2025",
+  "threshold_kg": 1000.0,
+  "training_n": 16006,
+  "global_mean_latest_lbs": 786.9013815536058,
+  "calibration": {
+    "method": "rolling_origin_odds_shift",
+    "threshold_kg": 1000.0,
+    "calibration_years": "2020-2025",
+    "intercept": 0.7142004350617539,
+    "slope": 1.0
+  },
+  "backtest_calibration": {
+    "raw": {
+      "n": 3696,
+      "events": 74,
+      "observed_rate": 0.02002164502164502,
+      "expected_events": 37.79705252854133,
+      "expected_events_sd": 5.33156247924821,
+      "event_gap_sd": 6.79030727153057,
+      "mean_probability": 0.010226475251228714,
+      "brier": 0.016730565557037842,
+      "log_loss": 0.07842426227508524
+    },
+    "adjusted": {
+      "n": 3696,
+      "events": 74,
+      "observed_rate": 0.02002164502164502,
+      "expected_events": 57.8560184154347,
+      "expected_events_sd": 6.331509242741639,
+      "event_gap_sd": 2.549784098170994,
+      "mean_probability": 0.015653684636210686,
+      "brier": 0.016793933752213705,
+      "log_loss": 0.07435307203327125
+    }
+  }
+}
